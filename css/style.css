@@ -12,10 +12,29 @@
 
 html {
   font-size: 62.5%;
+  font-family: sans-serif;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
+}
+
+/*
+  LOGO
+*/
+
+.logo {
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 6rem;
+}
+
+/*
+  MENU
+*/
+
+.menu {
+  grid-column-start: 6;
 }
 
 /*
@@ -26,4 +45,5 @@ h1 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
+  margin: 2rem;
 }
