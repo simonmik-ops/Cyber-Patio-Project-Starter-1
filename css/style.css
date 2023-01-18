@@ -46,6 +46,12 @@ img {
   height: auto;
 }
 
+p,
+a {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
 /*
   LOGO
 */
@@ -88,6 +94,14 @@ img {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   margin: 2rem;
+}
+
+.grid--about p, 
+.grid--contact a { 
+  grid-column-start: 4;
+  grid-column-end: 6;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .grid--gallery {
