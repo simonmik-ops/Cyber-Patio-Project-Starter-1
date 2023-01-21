@@ -54,9 +54,11 @@ dialog {
   align-items: center;
   justify-content: center;
   display: none;
+  z-index: 4;
 }
 
-dialog img {
+dialog img,
+dialog video {
   max-width: 50%;
   max-height: 70%;
   object-fit: cover;
@@ -187,4 +189,20 @@ dialog img {
   grid-row-start: 6;
   grid-row-end: 8;
   background: aquamarine;
+}
+
+/*
+  CLOSE
+*/
+
+.close {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
 }
