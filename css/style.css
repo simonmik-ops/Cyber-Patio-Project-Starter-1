@@ -28,7 +28,7 @@ box-sizing: border-box;
 }
 
 html{
-    font-size: 62,5;
+    font-size: 62.5%;
 }
 
 h1{
@@ -64,8 +64,11 @@ LOGO
     line-height: 6rem;
     grid-column-start: 1;
     grid-column-end: 7;
-    grid-row: 1;
     white-space: nowrap;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*
@@ -73,19 +76,23 @@ MENU
 */
 
 .menu{
-    font-family: 'Panama Monospace Iranic';
-    grid-column-start: 1;
-    grid-column-start: 7;
-    grid-row: 3;
-    font-size: 2rem;
-    font-weight: normal;
-    display: flex;
-    align-items: center;
+  font-family: 'Panama Monospace Iranic';
+  grid-column-start: 1;
+  grid-column-start: 7;
+  grid-row-start: 2;
+  font-size: 2rem;
+  font-weight: normal;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  background: pink;
 }
 
 .menu ul{
-    display: flex;
-    list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  background: green;
 }
 
 .menu li{
@@ -103,6 +110,10 @@ GRID
 display: grid;
 grid-template-columns: repeat(6,1fr);
 margin: 1rem;
+}
+
+.grid--header {
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .grid--about p{ 
@@ -137,7 +148,7 @@ grid-template-rows: repeat(6,1fr)
     bottom: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 }
 
