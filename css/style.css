@@ -59,6 +59,8 @@ dialog {
 dialog img {
   max-width: 50%;
   max-height: 70%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /*
