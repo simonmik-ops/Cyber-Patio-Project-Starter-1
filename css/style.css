@@ -48,6 +48,28 @@ img{
     width: 100px;
 }
 
+dialog {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+dialog img {
+  max-width: 50%;
+  max-height: 70%;
+  object-fit: cover;
+  object-position: center;
+}
+
 p,
 a {
   font-size: 2rem;
@@ -65,7 +87,6 @@ LOGO
     grid-column-start: 1;
     grid-column-end: 7;
     white-space: nowrap;
-    background: blue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,12 +100,11 @@ MENU
   font-family: 'Panama Monospace Iranic';
   grid-column-start: 1;
   grid-column-start: 7;
-  grid-row-start: 2;
+  grid-row-start: 4;
   font-size: 2rem;
   font-weight: normal;
   grid-column-start: 1;
   grid-column-end: 7;
-  background: pink;
 }
 
 .menu ul{
@@ -92,7 +112,6 @@ MENU
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  background: green;
 }
 
 .menu li{
@@ -132,7 +151,7 @@ grid-column-start: 3;
 } 
 
 .grid--gallery{
-grid-template-rows: repeat(6,1fr)
+grid-template-rows: repeat(3,1fr)
 }
 
 .grid__image{
@@ -164,7 +183,6 @@ grid-template-rows: repeat(6,1fr)
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    background: chartreuse;
   }
 
   .grid__image:nth-of-type(3) {
@@ -172,7 +190,6 @@ grid-template-rows: repeat(6,1fr)
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    background: chartreuse;
   }
 
   .grid__image:nth-of-type(4) {
@@ -180,7 +197,6 @@ grid-template-rows: repeat(6,1fr)
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-    background: chartreuse;
   }
 
   .grid__image:nth-of-type(5) {
@@ -188,7 +204,6 @@ grid-template-rows: repeat(6,1fr)
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
-    background: chartreuse;
   }
 
   .grid__image:nth-of-type(6) {
@@ -196,7 +211,6 @@ grid-template-rows: repeat(6,1fr)
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 3;
-    background: chartreuse;
   }
 
   .grid__image:nth-of-type(7) {
@@ -204,7 +218,6 @@ grid-template-rows: repeat(6,1fr)
     grid-column-end: 7;
     grid-row-start: 2;
     grid-row-end: 3;
-    background: chartreuse;
   }
 
   .grid__image:nth-of-type(8) {
@@ -212,13 +225,6 @@ grid-template-rows: repeat(6,1fr)
     grid-column-end: 7;
     grid-row-start: 3;
     grid-row-end: 4;
-    background: chartreuse;
   }
 
-  .grid__image:nth-of-type(9) {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    background: chartreuse;
-  }
+  
