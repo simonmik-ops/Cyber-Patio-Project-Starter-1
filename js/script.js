@@ -11,14 +11,11 @@ function init() {
   function onImageClick(event) { // On each image clicked give me the corresponding event
     const src = event.currentTarget.getAttribute('src'); // Grabbing the source of the image clicked
     const img = new Image(); // Create HTML <img> tag with JS
-  
     img.onload = function() { // Once my image has loaded...
       dialog.innerHTML = `<img src="${img.src}" />`;  // Go find the <dialog> previously defined above
       dialog.style.display = 'flex'; // Show the hidden dialog box
     }
-  
     img.src = src; // Define the src attribute of the <img src="_image_source_" />
-
     close.style.display = 'block';
   }
 
