@@ -59,7 +59,12 @@ footer {
   left: 0;
   right: 0;
   font-family: 'ExposureTrial--90';
-  color: red;
+  color: black;
+}
+
+a{
+  color: black;
+  text-decoration: none;
 }
 
 section {
@@ -101,6 +106,7 @@ img {
   cursor: pointer;
   font-family: 'Panama Monospace Iranic';
   font-size: 1rem;
+  line-height: 0;
 }
 
 .content__number:hover {
